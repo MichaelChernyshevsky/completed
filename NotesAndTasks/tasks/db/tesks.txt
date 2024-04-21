@@ -1,0 +1,22 @@
+create table tasks_folders (
+    id SERIAL PRIMARY KEY,
+    type VARCHAR NOT NULL
+);
+
+create table tasks (
+    id SERIAL PRIMARY KEY,
+    id_type Integer,
+    type VARCHAR NOT NULL,
+    count Integer,
+    start_day VARCHAR NOT NULL,
+    end_day VARCHAR NOT NULL
+);
+
+
+
+# account
+
+create table tasks_users ( 
+    id SERIAL PRIMARY KEY,
+    email VARCHAR NOT NULL
+);
