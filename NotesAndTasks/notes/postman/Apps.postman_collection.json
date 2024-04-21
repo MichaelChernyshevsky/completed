@@ -1,0 +1,227 @@
+{
+	"info": {
+		"_postman_id": "3d6ade4e-fb6e-4b74-8530-5592a4aedf58",
+		"name": "Apps",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28086873",
+		"_collection_link": "https://restless-eclipse-605319.postman.co/workspace/Chat_gpt~b04af9d0-ded3-4e22-bd85-7c2046bd0757/collection/28086873-3d6ade4e-fb6e-4b74-8530-5592a4aedf58?action=share&source=collection_link&creator=28086873"
+	},
+	"item": [
+		{
+			"name": "notes",
+			"item": [
+				{
+					"name": "folder",
+					"item": [
+						{
+							"name": "getFolders",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:5001/apps/folders",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5001",
+									"path": [
+										"apps",
+										"folders"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\":\"qwqeqwew\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5001/apps/notes/createFolder",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5001",
+									"path": [
+										"apps",
+										"notes",
+										"createFolder"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5001/apps/notes/folder/3/delete",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5001",
+									"path": [
+										"apps",
+										"notes",
+										"folder",
+										"3",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "notes",
+					"item": [
+						{
+							"name": "create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\":\"new\",\n    \"description\":\"new_comment\",\n    \"id_folder\":1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5001/apps/notes/create",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5001",
+									"path": [
+										"apps",
+										"notes",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getNotes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:5001/apps/notes/notes",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5001",
+									"path": [
+										"apps",
+										"notes",
+										"notes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:5001/apps/notes/note/1/delete",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5001",
+									"path": [
+										"apps",
+										"notes",
+										"note",
+										"1",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "common",
+					"item": [
+						{
+							"name": "deleteAll",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:5001/delete",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5001",
+									"path": [
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

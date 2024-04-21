@@ -1,0 +1,4 @@
+create table notes_folders (
+    id SERIAL PRIMARY KEY,
+    type VARCHAR NOT NULL
+);
